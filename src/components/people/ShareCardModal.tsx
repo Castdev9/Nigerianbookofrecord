@@ -40,7 +40,7 @@ export const ShareCardModal: React.FC<ShareCardModalProps> = ({ person, onClose 
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
-      <div className="relative w-full max-w-md rounded-3xl border border-white/10 bg-[#070e0a] p-6 shadow-2xl text-stone-100">
+      <div className="relative w-full max-w-md rounded-3xl border border-white/10 bg-[#063a26] p-6 shadow-2xl text-stone-100">
         <div className="flex items-center justify-between pb-3 border-b border-white/10">
           <span className="font-display text-sm font-semibold text-emerald-400">
             Create Share Card
@@ -51,7 +51,7 @@ export const ShareCardModal: React.FC<ShareCardModalProps> = ({ person, onClose 
         </div>
 
         {/* Visual Share Card Mockup */}
-        <div className="mt-5 overflow-hidden rounded-2xl border-2 border-emerald-500/40 bg-gradient-to-br from-[#062417] via-[#04120b] to-black p-6 shadow-xl relative">
+        <div className="mt-5 overflow-hidden rounded-2xl border-2 border-emerald-500/40 bg-gradient-to-br from-[#062417] via-[#04120b] to-[#022115] p-6 shadow-xl relative">
           <div className="flex items-center justify-between text-[10px] uppercase tracking-widest text-emerald-400 mb-6">
             <div className="flex items-center gap-2">
               <NigeriaEmblem size="sm" />

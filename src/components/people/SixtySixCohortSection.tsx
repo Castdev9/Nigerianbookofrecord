@@ -17,7 +17,7 @@ export const SixtySixCohortSection: React.FC<SixtySixCohortSectionProps> = ({
 
   return (
     <section id="sixty-six" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/10">
-      <div className="rounded-3xl border border-amber-500/20 bg-gradient-to-b from-[#121c15] via-[#07100b] to-[#040806] p-6 sm:p-10 md:p-12 relative overflow-hidden">
+      <div className="rounded-3xl border border-amber-500/20 bg-gradient-to-b from-[#121c15] via-[#07100b] to-[#022115] p-6 sm:p-10 md:p-12 relative overflow-hidden">
         {/* Subtle Ambient Gold Radiance */}
         <div className="absolute top-0 right-0 h-96 w-96 rounded-full bg-radial from-amber-500/10 to-transparent blur-3xl pointer-events-none" />
 

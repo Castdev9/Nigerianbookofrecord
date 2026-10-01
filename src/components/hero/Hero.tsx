@@ -46,7 +46,7 @@ export const Hero: React.FC<HeroProps> = ({
   }, [targetDate]);
 
   return (
-    <section id="hero" className="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-[#040806] pt-12 pb-20">
+    <section id="hero" className="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-[#022115] pt-12 pb-20">
       {/* Background Ambience: Flag-inspired subtle green & gold gradients */}
       <div className="absolute inset-0 pointer-events-none">
         {/* Left Green Ribbon */}

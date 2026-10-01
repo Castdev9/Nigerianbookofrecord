@@ -241,7 +241,7 @@ export const NigeriaEmblem: React.FC<{ className?: string; size?: 'sm' | 'md' | 
 
   return (
     <div
-      className={`relative inline-flex shrink-0 items-center justify-center rounded-xl border border-emerald-500/40 bg-gradient-to-br from-emerald-950/90 via-[#032214] to-[#040806] shadow-md shadow-emerald-950/40 transition-transform group-hover:scale-105 ${sizeMap[size]} ${className}`}
+      className={`relative inline-flex shrink-0 items-center justify-center rounded-xl border border-emerald-500/40 bg-gradient-to-br from-emerald-950/90 via-[#032214] to-[#022115] shadow-md shadow-emerald-950/40 transition-transform group-hover:scale-105 ${sizeMap[size]} ${className}`}
     >
       {/* Authentic Coat of Arms inside emblem */}
       <NigeriaCoatOfArms className="h-[85%] w-[85%] object-contain drop-shadow" />

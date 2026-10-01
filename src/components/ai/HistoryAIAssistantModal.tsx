@@ -110,7 +110,7 @@ export const HistoryAIAssistantModal: React.FC<HistoryAIAssistantModalProps> = (
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/85 backdrop-blur-md">
-      <div className="relative w-full max-w-2xl rounded-3xl border border-amber-500/30 bg-[#070e0a] text-stone-100 shadow-2xl flex flex-col h-[650px] max-h-[90vh] overflow-hidden">
+      <div className="relative w-full max-w-2xl rounded-3xl border border-amber-500/30 bg-[#063a26] text-stone-100 shadow-2xl flex flex-col h-[650px] max-h-[90vh] overflow-hidden">
         {/* Header */}
         <div className="flex items-center justify-between border-b border-white/10 bg-[#0a1610] px-6 py-4">
           <div className="flex items-center gap-2.5">
@@ -135,7 +135,7 @@ export const HistoryAIAssistantModal: React.FC<HistoryAIAssistantModalProps> = (
         </div>
 
         {/* Quick Question Prompts */}
-        <div className="border-b border-white/5 bg-[#050c08] p-3 overflow-x-auto scrollbar-none flex items-center gap-2">
+        <div className="border-b border-white/5 bg-[#042d1d] p-3 overflow-x-auto scrollbar-none flex items-center gap-2">
           {quickQuestions.map((q, idx) => (
             <button
               key={idx}

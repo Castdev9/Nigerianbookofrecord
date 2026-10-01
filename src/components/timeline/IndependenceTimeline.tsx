@@ -64,7 +64,7 @@ export const IndependenceTimeline: React.FC = () => {
       </div>
 
       {/* Selected Event Spotlight Feature */}
-      <div className="rounded-3xl border border-white/10 bg-[#070e0a] overflow-hidden shadow-2xl">
+      <div className="rounded-3xl border border-white/10 bg-[#063a26] overflow-hidden shadow-2xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 p-6 sm:p-10 md:p-12 items-center">
           {/* Left Column: Visual Asset */}
           <div className="lg:col-span-5 flex flex-col items-center">
@@ -80,7 +80,7 @@ export const IndependenceTimeline: React.FC = () => {
                   <span>National Archival Record</span>
                 </div>
               )}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#022115]/80 via-transparent to-transparent" />
               <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between text-xs">
                 <span className="text-emerald-300 font-mono">{selectedEvent.dateStr}</span>
                 <span className="text-stone-300 text-[11px]">{selectedEvent.era}</span>

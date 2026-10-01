@@ -41,7 +41,7 @@ export const LearnNigeriaSection: React.FC = () => {
 
   return (
     <section id="learn" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/10">
-      <div className="rounded-3xl border border-emerald-500/20 bg-gradient-to-b from-[#0a1810] via-[#07110c] to-[#040806] p-6 sm:p-10 md:p-12 relative">
+      <div className="rounded-3xl border border-emerald-500/20 bg-gradient-to-b from-[#0a1810] via-[#07110c] to-[#022115] p-6 sm:p-10 md:p-12 relative">
         {/* Header */}
         <div className="max-w-2xl mb-8">
           <div className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-950/40 px-3.5 py-1 text-xs text-emerald-300 mb-3">

@@ -78,7 +78,7 @@ export const NominateModal: React.FC<NominateModalProps> = ({ isOpen, onClose })
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-md overflow-y-auto">
-      <div className="relative w-full max-w-2xl rounded-3xl border border-white/10 bg-[#070e0a] p-6 sm:p-8 shadow-2xl text-stone-100 my-8">
+      <div className="relative w-full max-w-2xl rounded-3xl border border-white/10 bg-[#063a26] p-6 sm:p-8 shadow-2xl text-stone-100 my-8">
         <div className="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
           <div className="flex items-center gap-2">
             <PlusCircle className="h-5 w-5 text-emerald-400" />

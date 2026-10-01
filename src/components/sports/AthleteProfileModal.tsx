@@ -29,17 +29,17 @@ export const AthleteProfileModal: React.FC<AthleteProfileModalProps> = ({ athlet
       role="dialog"
       aria-modal="true"
       aria-labelledby="athlete-modal-title"
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/75 backdrop-blur-sm overflow-y-auto"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-[#01140c]/85 backdrop-blur-sm overflow-y-auto"
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-4xl bg-white dark:bg-[#07130c] border border-[#D8E9DE] dark:border-emerald-900/30 rounded-2xl shadow-2xl overflow-hidden my-8 max-h-[90vh] flex flex-col text-[#17352A] dark:text-stone-100"
+        className="relative w-full max-w-4xl bg-white dark:bg-[#042d1d] border border-[#D8E9DE] dark:border-emerald-800/40 rounded-2xl shadow-2xl overflow-hidden my-8 max-h-[90vh] flex flex-col text-[#17352A] dark:text-stone-100"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
-        <div className="relative p-6 sm:p-8 bg-[#F4FBF6] dark:bg-[#041a10] border-b border-[#D8E9DE] dark:border-emerald-900/40 flex flex-col sm:flex-row gap-6 items-start sm:items-center justify-between">
+        <div className="relative p-6 sm:p-8 bg-[#F4FBF6] dark:bg-[#022115] border-b border-[#D8E9DE] dark:border-emerald-800/40 flex flex-col sm:flex-row gap-6 items-start sm:items-center justify-between">
           <div className="flex items-start sm:items-center gap-5">
-            <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden border-2 border-[#008751] shadow-md flex-shrink-0 bg-stone-100 dark:bg-stone-800">
+            <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-xl overflow-hidden border-2 border-[#008751] shadow-md flex-shrink-0 bg-stone-100 dark:bg-[#063a26]">
               <img
                 src={athlete.photoUrl}
                 alt={athlete.name}
@@ -84,7 +84,7 @@ export const AthleteProfileModal: React.FC<AthleteProfileModalProps> = ({ athlet
 
           <button
             onClick={onClose}
-            className="absolute top-5 right-5 p-2 rounded-lg text-stone-500 hover:text-stone-900 dark:hover:text-white bg-white/80 dark:bg-stone-900/80 border border-stone-200 dark:border-stone-800 transition-colors"
+            className="absolute top-5 right-5 p-2 rounded-lg text-stone-500 hover:text-stone-900 dark:hover:text-white bg-white/80 dark:bg-[#063a26] border border-stone-200 dark:border-emerald-800/40 transition-colors"
             aria-label="Close modal"
           >
             <X className="w-5 h-5" />
@@ -94,7 +94,7 @@ export const AthleteProfileModal: React.FC<AthleteProfileModalProps> = ({ athlet
         {/* Modal Scrollable Body */}
         <div className="overflow-y-auto p-6 sm:p-8 space-y-8 flex-1">
           {/* Tagline Banner */}
-          <div className="p-4 rounded-xl bg-[#EAF7EF] dark:bg-emerald-950/20 border border-[#D8E9DE] dark:border-emerald-800/30 text-sm font-medium text-[#006B3C] dark:text-emerald-300">
+          <div className="p-4 rounded-xl bg-[#EAF7EF] dark:bg-emerald-950/40 border border-[#D8E9DE] dark:border-emerald-800/40 text-sm font-medium text-[#006B3C] dark:text-emerald-300">
             {athlete.tagline}
           </div>
 
@@ -119,7 +119,7 @@ export const AthleteProfileModal: React.FC<AthleteProfileModalProps> = ({ athlet
               {athlete.achievements.map((ach, idx) => (
                 <div
                   key={idx}
-                  className="p-3.5 rounded-xl border border-[#D8E9DE] dark:border-emerald-900/30 bg-[#F4FBF6] dark:bg-[#07160e] flex flex-col justify-between"
+                  className="p-3.5 rounded-xl border border-[#D8E9DE] dark:border-emerald-800/30 bg-[#F4FBF6] dark:bg-[#052f1e] flex flex-col justify-between"
                 >
                   <div className="flex items-center justify-between text-xs mb-1">
                     <span className="font-bold text-[#006B3C] dark:text-emerald-400">{ach.competition}</span>
@@ -154,7 +154,7 @@ export const AthleteProfileModal: React.FC<AthleteProfileModalProps> = ({ athlet
                 ))}
               </ul>
               {athlete.nationalTeamRecord && (
-                <div className="text-xs text-[#5F746A] dark:text-stone-400 pt-2 border-t border-[#D8E9DE] dark:border-emerald-950/50">
+                <div className="text-xs text-[#5F746A] dark:text-stone-400 pt-2 border-t border-[#D8E9DE] dark:border-emerald-900/40">
                   <span className="font-bold text-[#17352A] dark:text-stone-200">National Team: </span>
                   {athlete.nationalTeamRecord}
                 </div>
@@ -178,7 +178,7 @@ export const AthleteProfileModal: React.FC<AthleteProfileModalProps> = ({ athlet
           </div>
 
           {/* Sporting Impact */}
-          <section className="p-4 rounded-xl bg-white dark:bg-stone-900/60 border border-[#D8E9DE] dark:border-emerald-900/40 space-y-2">
+          <section className="p-4 rounded-xl bg-white dark:bg-[#052f1e] border border-[#D8E9DE] dark:border-emerald-800/40 space-y-2">
             <h4 className="text-xs font-bold uppercase tracking-wider text-[#006B3C] dark:text-emerald-400">
               National Sporting Impact & Legacy
             </h4>
@@ -189,7 +189,7 @@ export const AthleteProfileModal: React.FC<AthleteProfileModalProps> = ({ athlet
 
           {/* Where Are They Now? */}
           {athlete.whereAreTheyNow && (
-            <section className="p-4 rounded-xl bg-[#F4FBF6] dark:bg-[#07160e] border border-[#D8E9DE] dark:border-emerald-900/30 space-y-1">
+            <section className="p-4 rounded-xl bg-[#F4FBF6] dark:bg-[#052f1e] border border-[#D8E9DE] dark:border-emerald-800/30 space-y-1">
               <h4 className="text-xs font-bold text-[#17352A] dark:text-white flex items-center gap-1.5">
                 <MapPin className="w-3.5 h-3.5 text-[#008751]" />
                 <span>Where Are They Now?</span>
@@ -201,7 +201,7 @@ export const AthleteProfileModal: React.FC<AthleteProfileModalProps> = ({ athlet
           )}
 
           {/* Verified Sources */}
-          <section className="pt-4 border-t border-[#D8E9DE] dark:border-emerald-900/30 space-y-2 text-xs text-[#5F746A] dark:text-stone-400">
+          <section className="pt-4 border-t border-[#D8E9DE] dark:border-emerald-800/30 space-y-2 text-xs text-[#5F746A] dark:text-stone-400">
             <div className="font-bold text-[#17352A] dark:text-stone-300 flex items-center gap-1.5">
               <ExternalLink className="w-3.5 h-3.5 text-[#008751]" />
               <span>Verified Archival & Tournament Sources</span>
@@ -215,7 +215,7 @@ export const AthleteProfileModal: React.FC<AthleteProfileModalProps> = ({ athlet
         </div>
 
         {/* Modal Footer */}
-        <div className="p-4 bg-[#F4FBF6] dark:bg-[#041a10] border-t border-[#D8E9DE] dark:border-emerald-900/40 flex items-center justify-between">
+        <div className="p-4 bg-[#F4FBF6] dark:bg-[#022115] border-t border-[#D8E9DE] dark:border-emerald-800/40 flex items-center justify-between">
           <span className="text-xs text-[#5F746A] dark:text-stone-400">
             9JA Book of Records · Official Sports Digital Archive
           </span>

@@ -39,17 +39,41 @@ export const SportsSection: React.FC = () => {
   const filteredAthletes = useMemo(() => {
     return ALL_SPORTS_LEGENDS.filter((athlete) => {
       // Category match
-      if (selectedCategory === 'atlanta96' && !athlete.isAtlanta96) return false;
-      if (selectedCategory === 'modern' && athlete.category !== 'modern') return false;
-      if (selectedCategory === 'women-sport' && athlete.category !== 'women-sport' && athlete.id !== 'chioma-ajunwa-sport' && athlete.id !== 'tobi-amusan-sport' && athlete.id !== 'ese-brume-sport') return false;
-      if (
-        selectedCategory !== 'all' &&
-        selectedCategory !== 'atlanta96' &&
-        selectedCategory !== 'modern' &&
-        selectedCategory !== 'women-sport' &&
-        athlete.category !== selectedCategory
-      ) {
-        return false;
+      if (selectedCategory === 'football') {
+        const isFootball = athlete.sport.toLowerCase().includes('football') || athlete.category === 'football' || athlete.category === 'modern';
+        if (!isFootball) return false;
+      } else if (selectedCategory === 'athletics') {
+        const isAthletics = athlete.sport.toLowerCase().includes('athletics') || athlete.category === 'athletics';
+        if (!isAthletics) return false;
+      } else if (selectedCategory === 'boxing') {
+        const isBoxing = athlete.sport.toLowerCase().includes('boxing') || athlete.category === 'boxing';
+        if (!isBoxing) return false;
+      } else if (selectedCategory === 'basketball') {
+        const isBasketball = athlete.sport.toLowerCase().includes('basketball') || athlete.category === 'basketball';
+        if (!isBasketball) return false;
+      } else if (selectedCategory === 'paralympic') {
+        const isParalympic = athlete.sport.toLowerCase().includes('paralympic') || athlete.category === 'paralympic';
+        if (!isParalympic) return false;
+      } else if (selectedCategory === 'atlanta96') {
+        if (!athlete.isAtlanta96 && !athlete.tagline.toLowerCase().includes('atlanta')) return false;
+      } else if (selectedCategory === 'modern') {
+        if (athlete.category !== 'modern' && !athlete.id.includes('mikel') && !athlete.era.includes('Present')) return false;
+      } else if (selectedCategory === 'women-sport') {
+        const isWoman = athlete.category === 'women-sport' || [
+          'chioma-ajunwa-sport',
+          'tobi-amusan-sport',
+          'ese-brume-sport',
+          'falilat-ogunkoya-sport',
+          'mary-onyali-sport',
+          'blessing-okagbare-sport',
+          'nneka-ogwumike-sport',
+          'lucy-ejike-sport',
+        ].includes(athlete.id);
+        if (!isWoman) return false;
+      } else if (selectedCategory !== 'all') {
+        if (athlete.category !== selectedCategory && !athlete.sport.toLowerCase().includes(selectedCategory)) {
+          return false;
+        }
       }
 
       // Search match
@@ -69,6 +93,7 @@ export const SportsSection: React.FC = () => {
   // Featured Key Figures
   const ajunwa = ALL_SPORTS_LEGENDS.find((a) => a.id === 'chioma-ajunwa-sport');
   const yekini = ALL_SPORTS_LEGENDS.find((a) => a.id === 'rashidi-yekini-sport');
+  const mikel = ALL_SPORTS_LEGENDS.find((a) => a.id === 'mikel-obi-sport');
   const amusan = ALL_SPORTS_LEGENDS.find((a) => a.id === 'tobi-amusan-sport');
   const osimhen = ALL_SPORTS_LEGENDS.find((a) => a.id === 'victor-osimhen-sport');
 

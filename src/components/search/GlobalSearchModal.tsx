@@ -67,7 +67,7 @@ export const GlobalSearchModal: React.FC<GlobalSearchModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-start justify-center p-4 pt-16 bg-black/80 backdrop-blur-md overflow-y-auto">
-      <div className="relative w-full max-w-2xl rounded-3xl border border-white/10 bg-[#070e0a] shadow-2xl text-stone-100 overflow-hidden">
+      <div className="relative w-full max-w-2xl rounded-3xl border border-white/10 bg-[#063a26] shadow-2xl text-stone-100 overflow-hidden">
         {/* Search Input Bar */}
         <div className="flex items-center px-4 py-3.5 border-b border-white/10 bg-[#09150f]">
           <Search className="h-5 w-5 text-emerald-400 mr-3" />

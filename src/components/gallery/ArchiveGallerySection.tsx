@@ -60,7 +60,7 @@ export const ArchiveGallerySection: React.FC = () => {
           <div
             key={item.id}
             onClick={() => setActiveModalItem(item)}
-            className="group cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-[#070e0a] hover:border-emerald-500/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-between"
+            className="group cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-[#063a26] hover:border-emerald-500/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col justify-between"
           >
             <div>
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-stone-900">
@@ -70,7 +70,7 @@ export const ArchiveGallerySection: React.FC = () => {
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#022115]/80 via-transparent to-transparent" />
                 <div className="absolute top-2.5 right-2.5">
                   <span className="rounded bg-black/60 backdrop-blur-md px-2 py-0.5 text-[9px] font-mono font-medium text-emerald-400 border border-emerald-500/20">
                     {item.license}
@@ -105,7 +105,7 @@ export const ArchiveGallerySection: React.FC = () => {
       {/* Archival Preview Modal */}
       {activeModalItem && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
-          <div className="relative w-full max-w-3xl rounded-3xl border border-white/10 bg-[#070e0a] overflow-hidden text-stone-100 shadow-2xl">
+          <div className="relative w-full max-w-3xl rounded-3xl border border-white/10 bg-[#063a26] overflow-hidden text-stone-100 shadow-2xl">
             <div className="flex items-center justify-between p-4 border-b border-white/10 bg-[#09140e]">
               <div>
                 <span className="text-[10px] uppercase tracking-widest text-emerald-400 font-mono">

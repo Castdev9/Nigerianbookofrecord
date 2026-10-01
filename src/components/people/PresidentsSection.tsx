@@ -120,7 +120,7 @@ export const PresidentsSection: React.FC = () => {
       </div>
 
       {/* 2. HISTORICAL OFFICE EXPLAINER: "WHAT WAS THE DIFFERENCE?" */}
-      <div className="mb-14 rounded-3xl border border-white/10 bg-[#070e0a] p-6 sm:p-8">
+      <div className="mb-14 rounded-3xl border border-white/10 bg-[#063a26] p-6 sm:p-8">
         <div className="mb-4">
           <span className="text-[10px] uppercase tracking-widest text-emerald-400 font-bold block mb-1">
             Constitutional Foundations
@@ -200,7 +200,7 @@ export const PresidentsSection: React.FC = () => {
             <button
               key={leader.id}
               onClick={() => setSelectedLeader(leader)}
-              className="flex shrink-0 flex-col items-start rounded-2xl border border-white/10 bg-[#070e0a] p-3 text-left transition-all hover:border-emerald-500/50 hover:bg-emerald-950/20 group w-44"
+              className="flex shrink-0 flex-col items-start rounded-2xl border border-white/10 bg-[#063a26] p-3 text-left transition-all hover:border-emerald-500/50 hover:bg-emerald-950/20 group w-44"
             >
               <div className="flex items-center justify-between w-full text-[10px] mb-1.5 font-mono text-emerald-400">
                 <span>{leader.term}</span>
@@ -305,7 +305,7 @@ export const PresidentsSection: React.FC = () => {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search Nigerian Leader (e.g. Buhari, Obasanjo, Azikiwe)..."
-              className="w-full rounded-xl border border-white/10 bg-[#070e0a] pl-10 pr-4 py-2 text-xs text-white placeholder-stone-500 focus:border-emerald-500 focus:outline-none"
+              className="w-full rounded-xl border border-white/10 bg-[#063a26] pl-10 pr-4 py-2 text-xs text-white placeholder-stone-500 focus:border-emerald-500 focus:outline-none"
             />
             {searchQuery && (
               <button
@@ -342,7 +342,7 @@ export const PresidentsSection: React.FC = () => {
         {filteredLeaders.map((leader) => (
           <div
             key={leader.id}
-            className="group relative flex flex-col justify-between rounded-3xl border border-white/10 bg-[#070e0a] p-5 hover:border-emerald-500/40 transition-all shadow-lg"
+            className="group relative flex flex-col justify-between rounded-3xl border border-white/10 bg-[#063a26] p-5 hover:border-emerald-500/40 transition-all shadow-lg"
           >
             <div>
               {/* Header Office & Term */}
@@ -418,7 +418,7 @@ export const PresidentsSection: React.FC = () => {
       </div>
 
       {/* 7. "DID YOU KNOW?" ROTATING CARDS */}
-      <div className="mb-14 rounded-3xl border border-amber-500/20 bg-[#0c1109] p-6 sm:p-8">
+      <div className="mb-14 rounded-3xl border border-amber-500/20 bg-[#052f1e] p-6 sm:p-8">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4 pb-4 border-b border-white/10">
           <div className="flex items-center gap-2">
             <HelpCircle className="h-5 w-5 text-amber-400" />
@@ -458,7 +458,7 @@ export const PresidentsSection: React.FC = () => {
       </div>
 
       {/* 8. NATIONAL ACHIEVEMENT TIMELINE */}
-      <div className="mb-6 rounded-3xl border border-white/10 bg-[#070e0a] p-6 sm:p-8">
+      <div className="mb-6 rounded-3xl border border-white/10 bg-[#063a26] p-6 sm:p-8">
         <div className="mb-6">
           <span className="text-[10px] uppercase tracking-widest text-emerald-400 font-semibold block mb-1">
             National Continuity
@@ -494,7 +494,7 @@ export const PresidentsSection: React.FC = () => {
       {/* 9. DETAILED "VIEW IMPACT" MODAL */}
       {selectedLeader && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
-          <div className="relative w-full max-w-4xl max-h-[92vh] overflow-y-auto rounded-3xl border border-white/15 bg-[#050c08] p-6 sm:p-8 shadow-2xl">
+          <div className="relative w-full max-w-4xl max-h-[92vh] overflow-y-auto rounded-3xl border border-white/15 bg-[#042d1d] p-6 sm:p-8 shadow-2xl">
             {/* Close Button */}
             <button
               onClick={() => setSelectedLeader(null)}

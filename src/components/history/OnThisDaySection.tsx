@@ -71,7 +71,7 @@ export const OnThisDaySection: React.FC = () => {
                 matchedEvents.map((evt, idx) => (
                   <div
                     key={idx}
-                    className="rounded-2xl border border-emerald-500/30 bg-[#070e0a] p-5 shadow-lg"
+                    className="rounded-2xl border border-emerald-500/30 bg-[#063a26] p-5 shadow-lg"
                   >
                     <div className="flex items-center justify-between text-xs font-mono mb-2">
                       <span className="text-emerald-400 font-bold">{evt.year}</span>
@@ -106,7 +106,7 @@ export const OnThisDaySection: React.FC = () => {
                   </div>
                 ))
               ) : (
-                <div className="rounded-2xl border border-white/10 bg-[#070e0a] p-6 text-center">
+                <div className="rounded-2xl border border-white/10 bg-[#063a26] p-6 text-center">
                   <Clock className="mx-auto h-8 w-8 text-stone-500 mb-2" />
                   <span className="text-xs text-stone-300 block font-medium">
                     No verified milestones logged yet for this exact calendar day

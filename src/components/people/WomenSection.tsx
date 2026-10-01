@@ -13,7 +13,7 @@ export const WomenSection: React.FC<WomenSectionProps> = ({ people, onSelectPers
   return (
     <section id="women" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-white/10">
       {/* Distinctive Visual Header */}
-      <div className="relative rounded-3xl overflow-hidden border border-rose-500/20 bg-gradient-to-br from-[#1b0d14] via-[#0f090d] to-[#040806] p-8 sm:p-12 mb-10">
+      <div className="relative rounded-3xl overflow-hidden border border-rose-500/20 bg-gradient-to-br from-[#1b0d14] via-[#0f090d] to-[#022115] p-8 sm:p-12 mb-10">
         <div className="absolute top-0 right-0 h-80 w-80 rounded-full bg-radial from-rose-500/10 to-transparent blur-3xl pointer-events-none" />
 
         <div className="relative z-10 max-w-3xl">

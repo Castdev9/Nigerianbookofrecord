@@ -35,7 +35,7 @@ export const CorrectionModal: React.FC<CorrectionModalProps> = ({ person, onClos
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
-      <div className="relative w-full max-w-lg rounded-3xl border border-white/10 bg-[#070e0a] p-6 shadow-2xl text-stone-100">
+      <div className="relative w-full max-w-lg rounded-3xl border border-white/10 bg-[#063a26] p-6 shadow-2xl text-stone-100">
         <div className="flex items-center justify-between pb-3 border-b border-white/10">
           <div className="flex items-center gap-2">
             <AlertTriangle className="h-4 w-4 text-amber-400" />

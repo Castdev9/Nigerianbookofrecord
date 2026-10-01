@@ -103,7 +103,7 @@ export const RecordsSection: React.FC = () => {
         {filteredRecords.map((rec) => (
           <div
             key={rec.id}
-            className="rounded-2xl border border-white/10 bg-[#070e0a] p-5 flex flex-col justify-between hover:border-emerald-500/40 transition-colors"
+            className="rounded-2xl border border-white/10 bg-[#063a26] p-5 flex flex-col justify-between hover:border-emerald-500/40 transition-colors"
           >
             <div>
               {/* Category & Verified tag */}

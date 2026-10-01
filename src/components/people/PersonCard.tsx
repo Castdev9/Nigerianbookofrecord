@@ -37,7 +37,7 @@ export const PersonCard: React.FC<PersonCardProps> = ({
             loading="lazy"
           />
         ) : (
-          <div className="flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-emerald-950 via-stone-900 to-black p-6 text-center">
+          <div className="flex h-full w-full flex-col items-center justify-center bg-gradient-to-br from-emerald-950 via-stone-900 to-[#022115] p-6 text-center">
             <span className="text-4xl mb-2">🇳🇬</span>
             <span className="font-display text-sm font-semibold text-stone-200">{person.name}</span>
             <span className="text-xs text-emerald-400/80 mt-1">National Archive Heritage</span>
@@ -45,7 +45,7 @@ export const PersonCard: React.FC<PersonCardProps> = ({
         )}
 
         {/* Ambient Dark Scrim */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a110d] via-black/20 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0a110d] via-[#042d1d]/20 to-transparent" />
 
         {/* Top Floating Controls */}
         <div className="absolute top-3 inset-x-3 flex items-center justify-between z-10">

@@ -35,7 +35,7 @@ export const PersonProfileModal: React.FC<PersonProfileModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 md:p-6 bg-black/80 backdrop-blur-md overflow-y-auto">
-      <div className="relative w-full max-w-5xl max-h-[92vh] flex flex-col rounded-3xl border border-white/10 bg-[#070e0a] text-stone-100 shadow-2xl overflow-hidden my-auto">
+      <div className="relative w-full max-w-5xl max-h-[92vh] flex flex-col rounded-3xl border border-white/10 bg-[#063a26] text-stone-100 shadow-2xl overflow-hidden my-auto">
         {/* Top Floating Control Bar */}
         <div className="flex items-center justify-between border-b border-white/10 bg-[#09140e] px-4 py-3 sm:px-6">
           <div className="flex items-center gap-2">
@@ -94,7 +94,7 @@ export const PersonProfileModal: React.FC<PersonProfileModalProps> = ({
         {/* Modal Body Container */}
         <div className="flex-1 overflow-y-auto">
           {/* Hero Banner Grid: Left Portrait / Right Core Specs */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 p-6 sm:p-8 bg-gradient-to-b from-[#0a1710] to-[#070e0a] border-b border-white/5">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 p-6 sm:p-8 bg-gradient-to-b from-[#0a1710] to-[#063a26] border-b border-white/5">
             {/* Left Portrait Column (4 cols) */}
             <div className="md:col-span-4 flex flex-col items-center">
               <div className="relative aspect-[3/4] w-full max-w-[280px] rounded-2xl overflow-hidden border-2 border-emerald-500/30 shadow-2xl bg-stone-900">
@@ -113,7 +113,7 @@ export const PersonProfileModal: React.FC<PersonProfileModalProps> = ({
                     <span className="text-xs text-emerald-400 mt-2">National Hero</span>
                   </div>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#022115]/80 via-transparent to-transparent" />
                 <div className="absolute bottom-3 left-3 right-3 text-center">
                   <span className="text-[11px] text-emerald-300 tracking-wider uppercase font-medium">
                     State of Origin: {person.state} State
@@ -363,7 +363,7 @@ export const PersonProfileModal: React.FC<PersonProfileModalProps> = ({
                   {person.timeline.map((item, idx) => (
                     <div key={idx} className="relative group">
                       {/* Timeline Dot */}
-                      <div className="absolute -left-[31px] top-1 h-3 w-3 rounded-full border-2 border-emerald-400 bg-[#040806]" />
+                      <div className="absolute -left-[31px] top-1 h-3 w-3 rounded-full border-2 border-emerald-400 bg-[#022115]" />
                       <div className="text-xs font-bold text-emerald-400">{item.year}</div>
                       <div className="font-display text-sm font-semibold text-white mt-0.5">
                         {item.event}

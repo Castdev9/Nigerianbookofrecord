@@ -76,7 +76,7 @@ export const RegionalDevelopmentSection: React.FC = () => {
         {REGIONS_DATA.map((region) => (
           <div
             key={region.id}
-            className="group relative flex flex-col justify-between rounded-3xl border border-white/10 bg-gradient-to-b from-[#09150e] to-[#040806] p-6 sm:p-7 shadow-xl transition-all duration-300 hover:border-emerald-500/50 hover:shadow-2xl hover:shadow-emerald-950/30"
+            className="group relative flex flex-col justify-between rounded-3xl border border-white/10 bg-gradient-to-b from-[#063a26] to-[#022115] p-6 sm:p-7 shadow-xl transition-all duration-300 hover:border-emerald-500/50 hover:shadow-2xl hover:shadow-emerald-950/30"
           >
             <div>
               {/* Region Pill & Period */}
@@ -148,7 +148,7 @@ export const RegionalDevelopmentSection: React.FC = () => {
       </div>
 
       {/* 3. SOUTHERN NIGERIA BEFORE 1939 CONTEXT CARD */}
-      <div className="mb-16 rounded-3xl border border-amber-500/20 bg-[#0c100a] p-6 sm:p-8">
+      <div className="mb-16 rounded-3xl border border-amber-500/20 bg-[#052f1e] p-6 sm:p-8">
         <div className="flex items-start gap-4">
           <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-400">
             <Info className="h-5 w-5" />
@@ -187,7 +187,7 @@ export const RegionalDevelopmentSection: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Project 1: Cocoa House */}
-          <div className="flex flex-col justify-between rounded-3xl border border-white/10 bg-[#061009] p-6 hover:border-emerald-500/40 transition-all">
+          <div className="flex flex-col justify-between rounded-3xl border border-white/10 bg-[#042d1d] p-6 hover:border-emerald-500/40 transition-all">
             <div>
               <div className="flex items-center justify-between text-xs mb-3">
                 <span className="font-semibold text-emerald-400 uppercase tracking-wider">
@@ -225,7 +225,7 @@ export const RegionalDevelopmentSection: React.FC = () => {
           </div>
 
           {/* Project 2: Ahmadu Bello University */}
-          <div className="flex flex-col justify-between rounded-3xl border border-white/10 bg-[#061009] p-6 hover:border-emerald-500/40 transition-all">
+          <div className="flex flex-col justify-between rounded-3xl border border-white/10 bg-[#042d1d] p-6 hover:border-emerald-500/40 transition-all">
             <div>
               <div className="flex items-center justify-between text-xs mb-3">
                 <span className="font-semibold text-emerald-400 uppercase tracking-wider">
@@ -263,7 +263,7 @@ export const RegionalDevelopmentSection: React.FC = () => {
           </div>
 
           {/* Project 3: University of Nigeria, Nsukka */}
-          <div className="flex flex-col justify-between rounded-3xl border border-white/10 bg-[#061009] p-6 hover:border-emerald-500/40 transition-all">
+          <div className="flex flex-col justify-between rounded-3xl border border-white/10 bg-[#042d1d] p-6 hover:border-emerald-500/40 transition-all">
             <div>
               <div className="flex items-center justify-between text-xs mb-3">
                 <span className="font-semibold text-emerald-400 uppercase tracking-wider">
@@ -303,7 +303,7 @@ export const RegionalDevelopmentSection: React.FC = () => {
       </div>
 
       {/* 5. MICHAEL OKPARA DEVELOPMENT ERA SUBSECTION */}
-      <div className="mb-16 rounded-3xl border border-emerald-500/30 bg-gradient-to-br from-[#06150d] via-[#040c07] to-[#040806] p-7 sm:p-9 shadow-xl">
+      <div className="mb-16 rounded-3xl border border-emerald-500/30 bg-gradient-to-br from-[#06150d] via-[#040c07] to-[#022115] p-7 sm:p-9 shadow-xl">
         <div className="flex flex-col md:flex-row md:items-center justify-between pb-6 border-b border-white/10 gap-4 mb-6">
           <div>
             <div className="flex items-center gap-2 text-xs uppercase tracking-widest text-emerald-400 font-semibold mb-1">
@@ -543,7 +543,7 @@ export const RegionalDevelopmentSection: React.FC = () => {
           {filteredLeaders.map((ldr) => (
             <div
               key={ldr.id}
-              className="flex flex-col justify-between rounded-3xl border border-white/10 bg-[#070e0a] p-5 hover:border-emerald-500/40 transition-all group"
+              className="flex flex-col justify-between rounded-3xl border border-white/10 bg-[#063a26] p-5 hover:border-emerald-500/40 transition-all group"
             >
               <div>
                 <div className="flex items-center justify-between text-[11px] mb-3">
@@ -633,7 +633,7 @@ export const RegionalDevelopmentSection: React.FC = () => {
           {filteredAchievements.map((ach) => (
             <div
               key={ach.id}
-              className="flex flex-col justify-between rounded-3xl border border-white/10 bg-[#070e0a] p-5 hover:border-emerald-500/40 transition-all"
+              className="flex flex-col justify-between rounded-3xl border border-white/10 bg-[#063a26] p-5 hover:border-emerald-500/40 transition-all"
             >
               <div>
                 <div className="flex items-center justify-between text-[11px] mb-2">
@@ -677,7 +677,7 @@ export const RegionalDevelopmentSection: React.FC = () => {
       {/* REGION DETAIL MODAL */}
       {selectedRegion && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
-          <div className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-3xl border border-white/15 bg-[#050c08] p-6 sm:p-8 shadow-2xl">
+          <div className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-3xl border border-white/15 bg-[#042d1d] p-6 sm:p-8 shadow-2xl">
             <button
               onClick={() => setSelectedRegion(null)}
               className="absolute top-5 right-5 h-9 w-9 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center text-stone-400 hover:text-white"
@@ -757,7 +757,7 @@ export const RegionalDevelopmentSection: React.FC = () => {
       {/* LEADER DETAIL MODAL */}
       {selectedLeader && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
-          <div className="relative w-full max-w-xl max-h-[90vh] overflow-y-auto rounded-3xl border border-white/15 bg-[#050c08] p-6 sm:p-8 shadow-2xl">
+          <div className="relative w-full max-w-xl max-h-[90vh] overflow-y-auto rounded-3xl border border-white/15 bg-[#042d1d] p-6 sm:p-8 shadow-2xl">
             <button
               onClick={() => setSelectedLeader(null)}
               className="absolute top-5 right-5 h-9 w-9 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center text-stone-400 hover:text-white"

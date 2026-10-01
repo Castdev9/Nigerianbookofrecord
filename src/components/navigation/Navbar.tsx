@@ -116,7 +116,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   return (
     <>
-      <header className="sticky top-0 z-40 w-full border-b border-white/10 bg-[#040806]/95 backdrop-blur-2xl transition-all">
+      <header className="sticky top-0 z-40 w-full border-b border-white/10 bg-[#022115]/95 backdrop-blur-2xl transition-all">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           
           {/* Zone 1: Brand Wordmark with Official Nigeria Logo */}
@@ -262,7 +262,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       {mobileMenuOpen && (
         <div className="fixed inset-0 top-20 z-40 bg-black/70 backdrop-blur-sm lg:hidden" onClick={() => setMobileMenuOpen(false)}>
           <div
-            className="absolute inset-x-0 top-0 max-h-[85vh] overflow-y-auto border-b border-white/10 bg-[#050c08] p-5 shadow-2xl sm:p-6"
+            className="absolute inset-x-0 top-0 max-h-[85vh] overflow-y-auto border-b border-white/10 bg-[#042d1d] p-5 shadow-2xl sm:p-6"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header info in drawer with Nigeria Emblem */}

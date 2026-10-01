@@ -56,7 +56,7 @@ export const AdminDashboardModal: React.FC<AdminDashboardModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/85 backdrop-blur-md overflow-y-auto">
-      <div className="relative w-full max-w-5xl rounded-3xl border border-white/10 bg-[#070e0a] text-stone-100 shadow-2xl flex flex-col max-h-[92vh] overflow-hidden my-auto">
+      <div className="relative w-full max-w-5xl rounded-3xl border border-white/10 bg-[#063a26] text-stone-100 shadow-2xl flex flex-col max-h-[92vh] overflow-hidden my-auto">
         {/* Header */}
         <div className="flex items-center justify-between border-b border-white/10 bg-[#09150f] px-6 py-4">
           <div className="flex items-center gap-2.5">

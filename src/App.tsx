@@ -70,7 +70,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#040806] text-stone-100 flex flex-col font-sans selection:bg-[#008751] selection:text-white">
+    <div className="min-h-screen bg-[#022115] text-stone-100 flex flex-col font-sans selection:bg-[#008751] selection:text-white">
       {/* Sticky Responsive Top Navbar */}
       <Navbar
         onOpenSearch={() => setSearchOpen(true)}

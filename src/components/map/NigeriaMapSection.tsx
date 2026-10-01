@@ -44,7 +44,7 @@ export const NigeriaMapSection: React.FC = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         {/* Left Column: Interactive Map Grid Selector */}
-        <div className="lg:col-span-6 rounded-3xl border border-white/10 bg-[#070e0a] p-6 sm:p-8 flex flex-col justify-between">
+        <div className="lg:col-span-6 rounded-3xl border border-white/10 bg-[#063a26] p-6 sm:p-8 flex flex-col justify-between">
           <div className="flex items-center justify-between pb-4 border-b border-white/10 mb-4">
             <span className="text-xs uppercase tracking-wider text-emerald-400 font-semibold">
               State Grid Navigator
