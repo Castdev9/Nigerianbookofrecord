@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Cinzel', serif;
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --primary-green: #008751;
+    --deep-green: #006B3C;
+    --dark-green: #064E3B;
+    --light-green: #EAF7EF;
+    --very-light-green: #F4FBF6;
+    --white: #FFFFFF;
+    --text-primary: #17352A;
+    --text-muted: #5F746A;
+    --border-subtle: #D8E9DE;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+.font-editorial {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+/* Human Design UI Elements */
+.btn-nigeria-primary {
+  background-color: #006B3C;
+  color: #ffffff;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+.btn-nigeria-primary:hover {
+  background-color: #064E3B;
+}
+
+.btn-nigeria-secondary {
+  background-color: #ffffff;
+  border: 1px solid #008751;
+  color: #006B3C;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+.btn-nigeria-secondary:hover {
+  background-color: #EAF7EF;
+}
+
+/* Light Mode Overrides */
+html.light {
+  color-scheme: light;
+}
+
+html.light body {
+  background-color: #F4FBF6;
+  color: #17352A;
+}
+
+html.light .bg-\[\#040806\] {
+  background-color: #F4FBF6 !important;
+}
+
+html.light .bg-\[\#050c08\],
+html.light .bg-\[\#070e0a\],
+html.light .bg-\[\#061009\],
+html.light .bg-\[\#09150e\],
+html.light .bg-\[\#0c100a\],
+html.light .bg-\[\#0c1109\] {
+  background-color: #ffffff !important;
+  border-color: #D8E9DE !important;
+  box-shadow: 0 2px 10px rgba(0, 80, 45, 0.04);
+}
+
+html.light .border-white\/10,
+html.light .border-white\/5,
+html.light .border-white\/15 {
+  border-color: #D8E9DE !important;
+}
+
+html.light .text-white {
+  color: #17352A !important;
+}
+
+html.light .text-stone-100 {
+  color: #17352A !important;
+}
+
+html.light .text-stone-200 {
+  color: #274538 !important;
+}
+
+html.light .text-stone-300 {
+  color: #435b50 !important;
+}
+
+html.light .text-stone-400 {
+  color: #5F746A !important;
+}
+
+html.light .bg-black\/40,
+html.light .bg-black\/50,
+html.light .bg-black\/60 {
+  background-color: #EAF7EF !important;
+}
+
+html.light .bg-white\/5 {
+  background-color: rgba(0, 107, 60, 0.04) !important;
+}
+
+html.light .bg-white\/10 {
+  background-color: rgba(0, 107, 60, 0.08) !important;
+}
+
+html.light header {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+  border-bottom: 1px solid #D8E9DE !important;
+}
+
+/* Glassmorphism & Museum Accents */
+.glass-panel {
+  background: rgba(14, 22, 18, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+html.light .glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 80, 45, 0.12);
+}
+
+.glass-panel-gold {
+  background: rgba(22, 28, 20, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(217, 119, 6, 0.2);
+}
+
+.glass-panel-green {
+  background: rgba(4, 38, 24, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 135, 81, 0.25);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #040806;
+}
+html.light ::-webkit-scrollbar-track {
+  background: #eef3f0;
+}
+::-webkit-scrollbar-thumb {
+  background: #143522;
+  border-radius: 4px;
+}
+html.light ::-webkit-scrollbar-thumb {
+  background: #86bfa3;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #008751;
+}
